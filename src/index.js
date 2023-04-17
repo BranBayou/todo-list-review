@@ -90,7 +90,7 @@ const renderTodos = () => {
         const description = document.querySelector('.task-input-field');
         if (event.currentTarget.checked) {
           todos[index].completed = true;
-          description.style.textDeccoration="line-through";
+          description.style.textDeccoration = 'line-through';
         } else {
           todos[index].completed = false;
         }
