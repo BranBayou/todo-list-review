@@ -19,7 +19,7 @@ header .header {
   border-bottom: 1px solid gray;
 }
 
-header .header h1 {
+.header h1 {
   font-size: 1.5rem;
   font-weight: 100;
 }
@@ -37,12 +37,12 @@ header .header h1 {
   font-size: 1rem;
 }
 
-header .header button {
+.header button {
   height: 25px;
   width: 25px;
 }
 
-header #todoform {
+#todoform {
   display: flex;
   justify-content: space-between;
   align-items: center;
