@@ -36,12 +36,9 @@ const renderTodos = () => {
       newInputEl.setAttribute('value', taskDescEl.innerText);
       newInputEl.classList.add('edit-input');
       taskDescEl.replaceWith(newInputEl);
-      // Focus on the input field
       newInputEl.focus();
-      // Add event listener to the input field to handle the edit action
       newInputEl.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
-          // Save the edited todo
           todos[index].description = newInputEl.value;
           toLocalStorage();
           renderTodos();
